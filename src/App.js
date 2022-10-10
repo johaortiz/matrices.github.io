@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Ejercicio1 from "./components/Ejercicio1";
+import Ejercicio2 from "./components/Ejercicio2";
+import Ejercicio3 from "./components/Ejercicio3";
+import Ejercicio4 from "./components/Ejercicio4";
+import Ejercicio5 from "./components/Ejercicio5";
+import Ejercicio6 from "./components/Ejercicio6";
+import Ejercicio7 from "./components/Ejercicio7";
+import Ejercicio8 from "./components/Ejercicio8";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route exact path='/ej1' element={<Ejercicio1 />} />
+      <Route exact path='/ej2' element={<Ejercicio2 />} />
+      <Route exact path='/ej3' element={<Ejercicio3 />} />
+      <Route exact path='/ej4' element={<Ejercicio4 />} />
+      <Route exact path='/ej5' element={<Ejercicio5 />} />
+      <Route exact path='/ej6' element={<Ejercicio6 />} />
+      <Route exact path='/ej7' element={<Ejercicio7 />} />
+      <Route exact path='/ej8' element={<Ejercicio8 />} />
+      <Route path='*' element={<Home />} />
+    </Routes>
   );
 }
 
