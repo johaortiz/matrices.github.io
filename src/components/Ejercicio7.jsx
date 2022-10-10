@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ejercicio7 } from "../exercises/ejercicio7";
+import image from '../assets/diagramaEjercicio7.png';
 
 const initialState = {
     branches: ''
@@ -54,6 +55,7 @@ function Ejercicio7() {
                 }
                 <button><Link to='/'>Volver</Link></button>
             </form>
+            <img src={image} alt='Diagrama de Flujo' height={700} />
         </div>
     );
 };

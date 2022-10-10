@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ejercicio8 } from "../exercises/ejercicio8";
+import image from '../assets/diagramaEjercicio8.png';
 
 
 const initialState = {
@@ -63,8 +64,9 @@ function Ejercicio8() {
                         })
                         : <div>Ingrese los Datos requeridos</div>
                 }
+                <button><Link to='/'>Volver</Link></button>
             </form>
-            <button><Link to='/'>Volver</Link></button>
+            <img src={image} alt='Diagrama de Flujo' height={700} />
         </div>
     );
 };
