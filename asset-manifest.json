@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/static/js/main.4df807f0.js",
+    "static/media/diagramaEjercicio7.png": "/static/media/diagramaEjercicio7.a09d4b0a3a426f8fd67d.png",
+    "static/media/diagramaEjercicio8.png": "/static/media/diagramaEjercicio8.21e3ee5ce06b25e0e00c.png",
+    "static/media/diagramaEjercicio5.png": "/static/media/diagramaEjercicio5.5c8823d76caf26ed79cc.png",
+    "static/media/diagramaEjercicio2.png": "/static/media/diagramaEjercicio2.e7de90138e3d47ba3142.png",
+    "static/media/diagramaEjercicio6.png": "/static/media/diagramaEjercicio6.bfd82e4a91bfefdc45fd.png",
+    "index.html": "/index.html",
+    "main.4df807f0.js.map": "/static/js/main.4df807f0.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.4df807f0.js"
+  ]
+}
