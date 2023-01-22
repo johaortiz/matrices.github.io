@@ -53,19 +53,20 @@ function Ejercicio1() {
                 }
                 {
                     data
-                        && data[1]
-                        ? <div className="my-6">
-                            <p className="text-xl my-2"><strong>Es Matriz Cuadrada</strong></p>
-                            <p className="text-xl my-2"><strong>El promedio General es: {data[2]}</strong></p>
-                            <p className="text-xl my-2"><strong>El promedio por Filas es: {data[3].join('  ||  ')}</strong></p>
-                            <p className="text-xl my-2"><strong>El promedio Columnas es: {data[4].join('  ||  ')}</strong></p>
-                        </div>
-                        : <div className="my-6">
-                            <p className="text-xl my-2"><strong>No es Matriz Cuadrada</strong></p>
-                            <p className="text-xl my-2"><strong>El promedio General es: {data[2]}</strong></p>
-                            <p className="text-xl my-2"><strong>El promedio por Filas es: {data[3].join('  ||  ')}</strong></p>
-                            <p className="text-xl my-2"><strong>El promedio Columnas es: {data[4].join('  ||  ')}</strong></p>
-                        </div>
+                        ? data[1]
+                            ? <div className="my-6">
+                                <p className="text-xl my-2"><strong>Es Matriz Cuadrada</strong></p>
+                                <p className="text-xl my-2"><strong>El promedio General es: {data[2]}</strong></p>
+                                <p className="text-xl my-2"><strong>El promedio por Filas es: {data[3].join('  ||  ')}</strong></p>
+                                <p className="text-xl my-2"><strong>El promedio Columnas es: {data[4].join('  ||  ')}</strong></p>
+                            </div>
+                            : <div className="my-6">
+                                <p className="text-xl my-2"><strong>No es Matriz Cuadrada</strong></p>
+                                <p className="text-xl my-2"><strong>El promedio General es: {data[2]}</strong></p>
+                                <p className="text-xl my-2"><strong>El promedio por Filas es: {data[3].join('  ||  ')}</strong></p>
+                                <p className="text-xl my-2"><strong>El promedio Columnas es: {data[4].join('  ||  ')}</strong></p>
+                            </div>
+                        : <></>
                 }
             </div>
             <div className="flex flex-col mt-20">
